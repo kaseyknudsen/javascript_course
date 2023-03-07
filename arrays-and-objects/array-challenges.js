@@ -17,8 +17,21 @@ arr3 = [...new Set(arr3)]
 //console.log(arr3)
 
 //solution 2
+//const arr4 = [1, 2, 3, 4, 5]
+//const arr5 = [5, 6, 7, 8, 9, 10]
+//arr4.pop()
+//const arr6 = [...arr4, ...arr5]
+//console.log(arr6)
+
+//solution 3
+//const arr4 = [1, 2, 3, 4, 5]
+//const arr5 = [5, 6, 7, 8, 9, 10]
+//const arr6 = arr4.slice(0, 4).concat(arr5)
+//console.log(arr6)
+
+//solution 4
 const arr4 = [1, 2, 3, 4, 5]
 const arr5 = [5, 6, 7, 8, 9, 10]
-arr4.pop()
 const arr6 = [...arr4, ...arr5]
+arr6.splice(4, 1)
 console.log(arr6)
