@@ -35,3 +35,13 @@ function randomNum(...array) {
   return array[index];
 }
 console.log(randomNum(1, 2, 3, 4, 5, 6, 7, 8));
+
+//global and function scope
+//variable shadowing
+const x = 5
+function shadowing(num) {
+    //this x will override the global x
+    const x = 7
+    return x + num
+}
+console.log(shadowing(6))
