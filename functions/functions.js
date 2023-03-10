@@ -45,3 +45,17 @@ function shadowing(num) {
     return x + num
 }
 console.log(shadowing(6))
+
+//block scope using var. 
+//var is not block scoped!!! not good.
+//var IS function scoped, even though it's not block scoped
+if (true) {
+    const a = 500
+    let b = 600
+    var c = 700
+}
+console.log(c)
+
+//when we use var in global scope, it gets added to the window object.
+//when we use let or const in global scope, it doesn't get added to the window object
+
