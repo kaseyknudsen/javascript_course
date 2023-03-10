@@ -3,6 +3,8 @@ const add = (a, b) => a + b;
 
 console.log(add(4, 5));
 
+const IIFECheck = 'am i an IIFE'
+
 //when you have a single parameter, you don't need parenthesis
 const double = (a) => a * 2;
 console.log(double(20));
