@@ -59,3 +59,5 @@ console.log(c)
 //when we use var in global scope, it gets added to the window object.
 //when we use let or const in global scope, it doesn't get added to the window object
 
+
+
