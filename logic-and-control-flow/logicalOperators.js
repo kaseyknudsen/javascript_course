@@ -22,13 +22,16 @@ posts.length > 0 && console.log(posts[0])
 a = 10 || 20;
 //returns 20 because 0 is falsy
 b = 0 || 20
-//this will return the last value because they are all falsey
+//this will return the last value because they are all falsy
 let c = 0 || null || undefined
 console.log(`returns the first truthy value: ${a}`)
 console.log(`returns the first truthy value: ${b}`)
 console.log(`returns the last value because they are all false: ${c}`)
 
 //nullish coalescing operator ??
-//returns the right side operand when the left is either null or undefined (NOT JUST FALSEY)
+//returns the right side operand when the left is either null or undefined (NOT JUST FALSY)
 c = undefined ?? 20
 console.log(`will return the right side since the left is undefined: ${c}`)
+
+const scores = [1]
+scores.length > 0 && console.log(scores)
