@@ -22,7 +22,7 @@ const fizzBuzz = () => {
 const fizzBuzzRefactor = (num) => {
   let i = 1;
   while (i <= 100) {
-    i % 3 === 0 && i % 5 === 0
+    i % 15 === 0
       ? console.log(`${i}: FizzBuzz`)
       : i % 3 === 0
       ? console.log(`${i}: Fizz`)
