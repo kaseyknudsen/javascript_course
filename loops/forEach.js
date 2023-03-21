@@ -1,6 +1,6 @@
 //high order array methods
 
-//forEach
+//forEach doesn't return anything unlike map
 
 const socials = ["twitter", "linkedIn", "Facebook", "instagram"];
 //use this to see what methods are available on the array
