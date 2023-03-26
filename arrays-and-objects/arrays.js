@@ -18,6 +18,7 @@ console.log(typeof fruits);
 //object
 //objects
 
+
 //this will always add one to the end because the index is always 1 less than the length
 fruits[fruits.length] = "blueberry";
 console.log(`fruits after adding blueberry: ${fruits}`);
