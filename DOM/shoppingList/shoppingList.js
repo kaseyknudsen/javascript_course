@@ -11,7 +11,7 @@ output = document.URL;
 output = document.images[0]
 output = document.images[0].src;
 console.log(output)
-
+console.log(document.getElementById('app-title'))
 /* you can create an array from an html collection like this: */
 forms = Array.from(document.forms)
 console.log(forms)

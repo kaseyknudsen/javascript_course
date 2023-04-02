@@ -18,4 +18,5 @@ const redirect = auth
 //use && as shorthand if there is no else
 auth ? console.log('welcome to the dashboard') : null //is the same as...
 auth && console.log('Welcome to the dashboard')
+//this reads as if auth, then console.log welcome to the dashboard, else don't do anything
 
