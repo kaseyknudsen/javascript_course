@@ -112,6 +112,19 @@ header h1 {
   flex-wrap: wrap;
 }
 
+.list-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dog-menu {
+  width: 10em;
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: azure;
+}
+
 .items li {
   display: flex;
   justify-content: space-between;
