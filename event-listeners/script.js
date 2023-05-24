@@ -52,3 +52,8 @@ btn3.addEventListener("contextmenu", onRightClick)
 //mouseup
 //mousedown
 //wheel
+//mouseover
+//mouseout
+//dragstart
+//drag
+//dragend
