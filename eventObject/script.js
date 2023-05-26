@@ -3,6 +3,7 @@ const button2 = document.querySelector("#btn2");
 const button3 = document.querySelector("#btn3");
 const button4 = document.querySelector("#btn4");
 const button5 = document.querySelector("#btn5");
+const title = document.querySelector(".header");
 
 const googleLink = document.querySelector("a");
 
@@ -59,7 +60,7 @@ document.body.addEventListener("click", function (e) {
 //screenY - y position of the mouse click relative to the screen
 
 const onDrag = (e) => {
-  document.querySelector('#btn5').textContent = `X ${e.clientX} Y ${e.clientY}`
+  document.querySelector('h1').textContent = `X ${e.clientX} Y ${e.clientY}`
 }
 
-button5.addEventListener("drag", onDrag);
+title.addEventListener("drag", onDrag);

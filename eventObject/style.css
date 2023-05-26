@@ -1,13 +1,22 @@
-.buttons {
+body {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
-  padding: 50px;
   margin-bottom: 10px;
-  width: 25%;
+  width: 10em;
+  height: 10em;
+}
+
+.header {
+  border: 2px solid black;
+  width: 20%;
   text-align: center;
 }
