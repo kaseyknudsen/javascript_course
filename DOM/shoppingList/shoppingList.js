@@ -110,3 +110,11 @@ div.appendChild(text);
 
 //to put it under the list, you can do:
 document.querySelector("ul").appendChild(div);
+
+const createListItem = (item) => {
+  const div = document.createElement("div");
+  document.createTextNode(item);
+  document.querySelector("ul").appendChild(div);
+};
+
+createListItem("Bread");
