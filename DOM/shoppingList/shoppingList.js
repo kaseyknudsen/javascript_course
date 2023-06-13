@@ -87,9 +87,26 @@ dogs.forEach((dog, index) => {
 
 const listItems2 = document.querySelectorAll(".items");
 listItems2.forEach((item) => {
-  console.log(item.innerText)
+  console.log(item.innerText);
 });
 
-const listItems3 = document.getElementsByClassName(".items")
-const listItems3Array = Array.from(listItems3)
+const listItems3 = document.getElementsByClassName(".items");
+const listItems3Array = Array.from(listItems3);
 // listItems3Array.forEach((item) => console.log(`item: ${item}`))
+const div = document.createElement("div");
+div.className = "my-element";
+div.id = "my-element";
+div.setAttribute("title", "My Element");
+//innertext is meant to change already existing text
+//div.innerText = "Hello World"
+
+//this is the better way to add text
+const text = document.createTextNode("Hello World");
+div.appendChild(text);
+
+//this will add the text to the page
+// document.body.appendChild(div);
+// console.log(div);
+
+//to put it under the list, you can do:
+document.querySelector("ul").appendChild(div);
