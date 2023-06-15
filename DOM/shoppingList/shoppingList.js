@@ -130,7 +130,7 @@ const createListItem = (item) => {
   </button>`;
 };
 
-//creating and adding new elements is more lean & performant
+//creating and adding new elements is more clean & performant
 const createNewItem = (item) => {
   const li = document.createElement("li");
   li.appendChild(document.createTextNode(item));
@@ -141,9 +141,32 @@ const createNewItem = (item) => {
   button.appendChild(icon);
   li.appendChild(button);
   document.querySelector("ul").appendChild(li);
-  console.log(button);
-  console.log(li.innerHTML);
 };
 
 createListItem("eggs");
 createNewItem("Oat Milk");
+
+//refactor
+const createButton = (classes) => {
+  const button = document.createElement("button");
+  button.className = classes;
+  return button;
+};
+
+const createIcon = (classes) => {
+  const icon = document.createElement("i");
+  icon.className = classes;
+  return icon;
+};
+
+const createNewItemRefactor = (item) => {
+  const li = document.createElement("li");
+  li.appendChild(document.createTextNode(item));
+  const button = createButton("remove-item btn-link text-red");
+  const icon = createIcon("fa-solid fa-xmark");
+  button.appendChild(icon);
+  li.appendChild(button);
+  document.querySelector("ul").appendChild(li);
+};
+
+createNewItemRefactor("salad");
