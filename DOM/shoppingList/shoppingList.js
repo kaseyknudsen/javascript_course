@@ -119,7 +119,7 @@ div.appendChild(text);
 
 // createListItem("Bread");
 
-//quick & dirty
+//quick & dirty. Much less efficient.
 const createListItem = (item) => {
   //this won't work because li is a string, not a node
   //const li = `<li>${item}</li>`;
@@ -130,4 +130,20 @@ const createListItem = (item) => {
   </button>`;
 };
 
+//creating and adding new elements is more lean & performant
+const createNewItem = (item) => {
+  const li = document.createElement("li");
+  li.appendChild(document.createTextNode(item));
+  const button = document.createElement("button");
+  button.className = "remove-item btn-link text-red";
+  const icon = document.createElement("i");
+  icon.className = "fa-solid fa-xmark";
+  button.appendChild(icon);
+  li.appendChild(button);
+  document.querySelector("ul").appendChild(li);
+  console.log(button);
+  console.log(li.innerHTML);
+};
+
 createListItem("eggs");
+createNewItem("Oat Milk");
