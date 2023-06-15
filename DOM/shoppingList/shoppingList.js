@@ -109,12 +109,25 @@ div.appendChild(text);
 // console.log(div);
 
 //to put it under the list, you can do:
-document.querySelector("ul").appendChild(div);
+// document.querySelector("ul").appendChild(div);
 
+// const createListItem = (item) => {
+//   const div = document.createElement("div");
+//   document.createTextNode(item);
+//   document.querySelector("ul").appendChild(div);
+// };
+
+// createListItem("Bread");
+
+//quick & dirty
 const createListItem = (item) => {
-  const div = document.createElement("div");
-  document.createTextNode(item);
-  document.querySelector("ul").appendChild(div);
+  //this won't work because li is a string, not a node
+  //const li = `<li>${item}</li>`;
+  const li = document.createElement("li");
+  document.querySelector(".items").appendChild(li);
+  li.innerHTML = `${item} <button class="remove-item btn-link text-red">
+  <i class="fa-solid fa-xmark"></i>
+  </button>`;
 };
 
-createListItem("Bread");
+createListItem("eggs");
