@@ -170,3 +170,49 @@ const createNewItemRefactor = (item) => {
 };
 
 createNewItemRefactor("salad");
+
+//insertAdjacentElement
+//beforebegin
+const insertElement = () => {
+  const filter = document.querySelector(".filter");
+  const h1 = document.createElement("h1");
+  h1.textContent = "insert adjacent element";
+  //this h1 will be put before the filter form
+
+  filter.insertAdjacentElement("beforebegin", h1);
+  //this will put th h1 after the filter
+  filter.insertAdjacentElement("afterend", h1);
+};
+insertElement();
+
+//insertAdjacentText
+//afterend
+const insertText = () => {
+  const item = document.querySelector("li:first-child");
+  item.insertAdjacentText("afterend", "insert adjacent text");
+};
+insertText();
+//insertAdjacentHTML
+const insertHTML = () => {
+  const clearButton = document.querySelector("#clear");
+  clearButton.insertAdjacentHTML(
+    "beforebegin",
+    "<h2>insert adjacent HTML</h2>"
+  );
+};
+insertHTML();
+
+//insertBefore (define a parent, and choose the item inside the parent to insert the item before)
+const insertBeforeItem = () => {
+  const ul = document.querySelector("ul");
+  const li = document.createElement("li");
+  li.textContent = "i am a new item";
+  const thirdItem = document.querySelector("li:nth-child(3)");
+  //call insert before on the parent
+  ul.insertBefore(li, thirdItem);
+};
+
+insertBeforeItem();
+
+//afterbegin
+//beforeend
