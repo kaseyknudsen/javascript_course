@@ -180,7 +180,7 @@ const insertElement = () => {
   //this h1 will be put before the filter form
 
   filter.insertAdjacentElement("beforebegin", h1);
-  //this will put th h1 after the filter
+  //this will put the h1 after the filter
   filter.insertAdjacentElement("afterend", h1);
 };
 insertElement();
@@ -213,6 +213,13 @@ const insertBeforeItem = () => {
 };
 
 insertBeforeItem();
+const li = document.createElement("li");
+const anotherFirstItem = document.querySelector("li:first-child");
 
-//afterbegin
-//beforeend
+//custom insertAfterChallenge
+const insertAfter = (newEl, existingEl) => {
+  li.textContent = "insert me after";
+  existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
+};
+
+insertAfter(li, anotherFirstItem);
