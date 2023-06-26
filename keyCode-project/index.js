@@ -7,13 +7,16 @@ const newBox = (className, textToAdd) => {
 };
 
 let numBoxes = 5;
+const textList = ["Box 1", "Box 2", "Box 3", "Box 4", "Box 5"];
 
 const myContainer = () => {
   const container = document.createElement("div");
   container.className = "container";
+  let boxNum = -1;
   for (i = 0; i < numBoxes; i++) {
-    const box = newBox("box", "I am a box");
+    const box = newBox("box", textList[boxNum + 1]);
     container.appendChild(box);
+    boxNum++;
   }
 
   document.body.appendChild(container);
