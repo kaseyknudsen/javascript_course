@@ -11,9 +11,11 @@ const myContainer = () => {
   container.className = "container";
   document.body.appendChild(container);
   const box = createBox("box", "I am a box");
-  container.appendChild(box);
 };
 
-// createBox("box", "I am a box");
-// createBox("box", "I am a box");
-// createBox("box", "I am a box");
+let numBoxes = 3;
+
+const createBoxes = () => {};
+for (i = 0; i < numBoxes; i++) {
+  createBox("box", "I am a box");
+}
