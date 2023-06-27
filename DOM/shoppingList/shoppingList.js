@@ -231,6 +231,7 @@ const onKeyPress = (e) => {
 const onKeyUp = (e) => {
   console.log("keyup");
 };
+//this will keep going as long as you hold the key down
 const onKeyDown = (e) => {
   console.log("keydown");
   console.log(e.key);
