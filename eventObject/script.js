@@ -19,15 +19,18 @@ button3.style.backgroundColor = "green";
 button4.style.backgroundColor = "yellow";
 
 button1.addEventListener("click", (e) => {
-  console.log(e.target);
-  console.log(e.offsetY);
-  console.log(e.offsetX);
+  // console.log(e.target);
+  // console.log(e.offsetY);
+  // console.log(e.offsetX);
+  e.target.style.backgroundColor = "steelblue";
 });
 
+
 //target is the element that triggered the event, or the element that you click on
-button1.addEventListener("click", (e) => {
-  console.log(`target: ${e.target}`);
-});
+// button1.addEventListener("click", (e) => {
+//   console.log(`target: ${e.target}`);
+
+// });
 
 //currentTarget is the element that the event listener is attached to
 button2.addEventListener("click", (e) => {
@@ -50,17 +53,19 @@ document.body.addEventListener("click", function (e) {
   console.log(e.timeStamp);
 });
 
+//type - the type of event that was triggered
+//timestamp - e.timeStamp
 //clientX - x position of the mouse click relative to the window
 //clientY - y position of the mouse click relative to the window
 //offsetX - x position of the mouse click relative to the element
 //offsetY - y position of the mouse click relative to the element
 //pageY - y position of the mouse click relative to the page
 //pageX - X position of the mouse click relative to the page
-//screenX - x position of the mouse click relative to the screen
-//screenY - y position of the mouse click relative to the screen
+//screenX - x position of the mouse click relative to the screen (different depending on the size of the screen)
+//screenY - y position of the mouse click relative to the screen (different depending on the size of the screen)
 
 const onDrag = (e) => {
-  document.querySelector('h1').textContent = `X ${e.clientX} Y ${e.clientY}`
-}
+  document.querySelector("h1").textContent = `X ${e.clientX} Y ${e.clientY}`;
+};
 
 title.addEventListener("drag", onDrag);
