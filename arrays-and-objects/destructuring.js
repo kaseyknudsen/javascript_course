@@ -7,9 +7,9 @@ const toDo = {
   },
 };
 
-//const { id, title, user } = toDo;
-//console.log(id);
-//console.log(user);
+const { id, title, user } = toDo;
+console.log(id);
+console.log(user);
 //{ name: 'Dad', age: 79 }
 
 // const {

@@ -1,5 +1,5 @@
 let output;
-
+const itemInput = document.getElementById("item-input");
 /* these give us back and html collection, which is array-like */
 /* you can't use array methods on these */
 output = document.all;
@@ -223,3 +223,42 @@ const insertAfter = (newEl, existingEl) => {
 };
 
 insertAfter(li, anotherFirstItem);
+
+//keyboard events & key properties
+const onKeyPress = (e) => {
+  console.log("keypress");
+};
+const onKeyUp = (e) => {
+  console.log("keyup");
+};
+//this will keep going as long as you hold the key down
+const onKeyDown = (e) => {
+  console.log("keydown");
+  console.log(e.key);
+  // document.querySelector("h1").innerText = e.key;
+};
+
+if (e.key === "Enter") {
+  alert("you pressed enter");
+}
+//keyCode: below is a link to a table of keycodes
+//https://www.toptal.com/developers/keycode/table
+if (e.keyCode === 13) {
+  alert("you pressed enter");
+}
+//code
+if (e.code === "Digit1") {
+  console.log("you pressed 1");
+}
+//repeat is a boolean
+if (e.repeat) {
+  console.log("you are holding down " + e.key);
+}
+
+console.log("Shift: " + e.shiftKey);
+console.log("Control: " + e.ctrlKey);
+console.log("Option: " + e.altKey);
+
+itemInput.addEventListener("keypress", onKeyPress);
+itemInput.addEventListener("keyup", onKeyUp);
+itemInput.addEventListener("keydown", onKeyDown);

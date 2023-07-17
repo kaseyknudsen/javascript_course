@@ -1,4 +1,3 @@
-
 const library = [
   {
     title: "Dog Breeds",
@@ -38,5 +37,5 @@ const { title: firstBook } = library[0];
 
 console.log(firstBook);
 
-const libraryJSON = JSON.stringify(library)
-console.log(libraryJSON)
+const libraryJSON = JSON.stringify(library);
+console.log(`stringify: ${libraryJSON}`);
