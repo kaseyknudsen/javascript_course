@@ -26,7 +26,7 @@ const promise2 = new Promise((resolve, reject) => {
 }).then((user) => console.log(user.name, user.age));
 
 const getUser = new Promise((resolve, reject) => {
-  let error = true;
+  let error = false;
   if (!error) {
     setTimeout(() => {
       resolve({ name: "Murphy", breed: "Labradoodle", color: "dark blonde" });
