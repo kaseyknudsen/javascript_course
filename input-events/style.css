@@ -1,6 +1,14 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.form-control {
+  padding-bottom: 10px;
+}
+
+.check {
+  padding-top: 10px;
 }
