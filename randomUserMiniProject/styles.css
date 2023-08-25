@@ -1,0 +1,9 @@
+.userProfile {
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid black;
+  text-align: center;
+  margin: auto;
+  margin-top: 30%;
+  background-color: lightblue;
+}
