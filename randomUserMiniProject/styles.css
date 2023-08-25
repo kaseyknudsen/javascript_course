@@ -1,9 +1,24 @@
 .userProfile {
-  width: 20rem;
-  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 30rem;
   border: 2px solid black;
   text-align: center;
   margin: auto;
   margin-top: 30%;
   background-color: lightblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#generateUser {
+  width: 10em;
+  height: 5em;
+  margin-top: 40px;
+  background-color: lightblue;
+  margin-left: 40%;
+}
+
+.imageClass {
+    padding-top: 10px;
 }
